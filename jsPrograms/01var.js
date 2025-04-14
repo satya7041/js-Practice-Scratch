@@ -8,8 +8,7 @@ accountEmail="saty22@gmail.com"
 accountPassword="2222"
 accountCity="Noida"
 
-/*
-prefer not to use var
+/*prefer not to use var
 because of issue in block scope({this bracket}) and functional scope   
 */
 console.log(accountId);
