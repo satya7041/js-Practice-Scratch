@@ -27,15 +27,21 @@
 
 //Compress the string
 
-function runFunction(){
-  console.log("Hello String");
-  const str1 = document.getElementById("str1").value;
-  console.log("String is: ", str1);
-  const inChar = str1.split('');
-  const compress ={}
-  console.log("total are: ", inChar)
-  for (let item in inChar){
-    compress(item) = (compress(item) || 0 ) + 1
-  }
-console.log("total are: ", compress)
+// function runFunction(){
+//   console.log("Hello String");
+//   const str1 = document.getElementById("str1").value;
+//   console.log("String is: ", str1);
+//   const inChar = str1.split('');
+//   const compress ={}
+//   console.log("total are: ", inChar)
+//   for (let item in inChar){
+//     compress(item) = (compress(item) || 0 ) + 1
+//   }
+// console.log("total are: ", compress)
+// }
+
+// find longest substring
+function Find(){
+ console.log("Hello")
+      
 }
