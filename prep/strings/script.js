@@ -41,7 +41,29 @@
 // }
 
 // find longest substring
-function Find(){
- console.log("Hello")
+// function Find(){
+//  console.log("Hello")
       
+// }
+
+//make first letter capital in string
+function Convert() {
+    console.log("Hello");
+
+    const data = document.getElementById("str1").value;
+    console.log("incoming data: ", data);
+
+    const changing = data.split(' ');  // Split sentence into words
+    console.log("split words: ", changing);
+
+    const capitalizedWords = changing.map(word => {
+        if (word.length === 0) return "";  // handle empty strings (e.g. multiple spaces)
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    });
+
+    const finalResult = capitalizedWords.join(' ');
+    console.log("Final result: ", finalResult);
+
+    // Optionally display result in HTML
+    document.getElementById("message").innerText = finalResult;
 }
