@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(126, 202, 186);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+input[type="number"]{
+border-radius: 10px;
+margin-bottom: 5px;
+padding-left: 5px;
+}
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}

@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(218, 218, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
