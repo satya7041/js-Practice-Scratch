@@ -61,4 +61,4 @@ person1.getDetails();
 console.log("details pof person2 are: ", person2);
 person2.getDetails()
 console.log("details pof person3 are: ", person3);
-person3.getDetails()
+person3.getDetails();
