@@ -1,0 +1,92 @@
+<!-- here we study about dom like methods of selecting elements(like- document.queruSelector,querySelectorAll,
+ getElelmentById etc) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Depth Knowledge</title>
+    <!-- <style>
+        .red-color{
+            color:red;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    </style> -->
+</head>
+<body>
+
+    <div class="block">
+        <h1 class="remove">DOM is document object model </h1>
+        <h4 class="remove">Hey! there my name is
+            <!-- inline styling in html below -->
+             <!-- <span style="color: red; text-decoration: overline;"
+              id="username">unknown</span></h4> -->
+             
+              <span id="username">unknown</span></h4>
+        <p class="remove">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, commodi.</p>
+        <h3 class="paragraph">Data is being process.</h3>
+        <pre><code>console.log('Hey There')</code></pre>
+       
+    </div>
+    <!-- css selectors--
+    Tag - ("tagname")
+    id - #
+    class - . operator -->
+
+     <!-- <script src="script.js"></script> -->
+      <script>
+        //Note- querySelector select the first tag,class,id to perform task
+
+        // const div = document.querySelector("div"); //tag name
+        // div.innerHTML=alert("Help...!") //if inside tag there is html then use innerHTML, 
+        // but if no HTML then use innerText
+        // const username = document.querySelector("#username"); //id
+        // username.innerText = "<i>Satyam</i>"
+        // const username = document.querySelectorAll(".block"); //class
+        // console.log(username)
+        // username.innerHTML = "<h1><i>Satyam, how are you?</i></h1>";
+        
+// username.forEach(element => {
+//     console.log(element.innerHTML)
+// });
+
+        // const name = document.getElementById("username");
+        // name.innerText = "Satyam";
+        // // name.classList.add("red-color", "underline");
+        // console.log(name.classList)
+        // //inline style in js
+        // name.style.color= "violet";
+        // name.style.textDecoration = "underline";
+
+        // //style in parent element
+        // name.parentElement.style.backgroundColor = "white";
+        // const elements = document.getElementsByClassName("paragraph");
+        // console.log("data",elements);
+        // console.log("data",typeof elements);
+       //this not support HOF because it's not pure array, it is object
+
+    //    first-way- using array index
+        // for (let index = 0; index < elements.length; index++) {
+        //     // let element = elements[index];
+        //     // element.style.color = "blue";
+        // }
+        //second way- using item() method
+        // for (let index = 0; index < elements.length; index++) {
+        //     elements.item(index).style.background = "blue";
+        // }
+
+        const elementNew = document.getElementsByClassName("remove");
+// console.log(elementNew);
+// console.log(typeof elementNew); //object type
+        for (let i = elementNew.length -1; i>=0 ; i--) {
+            console.log("length first is: ", elementNew.length)
+            elementNew.item(i).remove();
+            console.log("length is: ", elementNew.length)
+            
+        }
+      </script>
+</body> 
+</html>
