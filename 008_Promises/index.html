@@ -1,0 +1,47 @@
+<!-- here we study about dom event listeiners -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Depth Knowledge</title>
+</head>
+
+<body>
+
+    <div class="block">
+        <h4 id="name-block">Hey! there my name is
+
+            <span id="username">Satyam</span>
+        </h4>
+        <p class="remove">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, commodi.</p>
+
+    </div>
+    <div id="my-container"></div>
+    <button id="clickButton">Click Me</button>
+
+    <script>
+        let a =10;
+        let b = 20;
+        let result = a+b;
+        //first way-
+        // async function getData() {
+        //     let resultFromServer = await fetch('https://jsonplaceholder.typicode.com/posts');
+        //     console.log(await resultFromServer.json());
+        // }
+        // getData();
+
+        //second way-
+        fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((data)=> {
+            console.log(data)})
+        .catch((error)=>{
+            console.error("Error:",error);
+        })
+        console.log(result)
+    </script>
+</body>
+
+</html>

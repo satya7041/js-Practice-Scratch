@@ -1,0 +1,64 @@
+<!-- here we study about dom event listeiners -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Depth Knowledge</title>
+</head>
+
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to my website</p>
+    </nav>
+
+    <div class="block">
+        <h4 id="name-block">Hey! there my name is
+
+            <span id="username">Satyam</span>
+        </h4>
+        <p class="remove">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, commodi.</p>
+
+    </div>
+    <div id="my-container"></div>
+    <button id="clickButton">Click Me</button>
+
+    <script>
+        // const el = document.getElementById("clickButton");
+        // el.addEventListener("click",()=>{
+        //     const el2 = document.getElementById("name-block");
+        //     // console.log("heaed: ",el2);
+        //     // el2.style.color = "red"
+        //     if(el2.style.color == "red"){
+        //         el2.style.color = "blue";
+        //     } else {
+        //         el2.style.color = "red";
+
+        //     }
+        // })
+
+        //remove element while click
+        // const getAllElement = document.querySelector("body").children;
+        // console.log(getAllElement);
+        // // console.log(typeof getAllElement); // so forEach not work
+        // for (let i = 0; i < getAllElement.length; i++) {
+        //     getAllElement.item(i).addEventListener("click",()=>{
+        //         getAllElement.item(i).remove();
+        //     })
+            
+        // }
+
+        //dynamic creating header
+        const generateElement = document.getElementById("clickButton");
+        let dynamicElement = document.getElementById("my-container");
+        generateElement.addEventListener("click",()=>{
+            let element = document.createElement('h1');
+           element.innerText = "Satyam Srivastava...";
+            dynamicElement.appendChild(element);
+        })
+    </script>
+</body>
+
+</html>
