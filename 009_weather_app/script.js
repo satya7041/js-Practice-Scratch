@@ -6,7 +6,7 @@ const cityName = document.getElementById("city-name");
 const cityTime = document.getElementById("city-time");
 const cityTemp = document.getElementById("city-temp")
 
-//Note- Due to http instead if https, this will may not work, because i am working on github codespace, so
+//Note- Due to http instead if https in weather api, this will may not work, because i am working on github codespace, so
 //  kindly run local instead of github codespace
     async function getWeather(cityName){
         const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=fddb74a67d2842c9b77115826252006&q=${cityName}&aqi=yes`)
