@@ -1,4 +1,4 @@
-// Note- Due to working on secure https codespace, may be this weather api will not work, so write in local ide
+// Note- Due to working on secure https codespace, may be this weather api will not work, so write in local ide..
 const button = document.getElementById("get-location-button");
 const cityName = document.getElementById("city-name");
 const cityTemp = document.getElementById("city-temp");
