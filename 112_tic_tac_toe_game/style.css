@@ -1,0 +1,23 @@
+ body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             height: 100vh;  
+             background-color: antiquewhite;  
+            
+        }
+        .row{
+            display: flex;
+        }
+        .col{
+            height: 60px;
+            width: 60px;
+            border: 1px solid black;
+            border-width: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
